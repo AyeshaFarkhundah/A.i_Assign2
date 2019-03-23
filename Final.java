@@ -1,8 +1,23 @@
 package Problem;
-
+import java.util.Scanner;
 public class Final {
-
-	public static void main() {
+	
+	
+	
+	
+	public static void main(String [ ] args) {
+		
+				
+		//Ask user if they would be computing using absolute or relative distance
+		// Accept answer 
+		System.out.println("How would you like to compute your process today? Type A for absolute value and Type R for relative");
+		Scanner input = new Scanner(System.in);
+		String compType = input.next();
+		
+		switch (compType) {
+		
+		case "A":
+		
 		//int cityMatrix[19][19];
 		//creating a test city Matrix but can also accept these values from user
 		
@@ -31,6 +46,29 @@ public class Final {
 		//City fCity = new City(cityName[5],0,0 );
 		//City gCity = new City(cityName[6],0,0 );
 		//City hCity = new City(cityName[7],0,0 );
+	
+		break;
+		
+		case "R":
+		System.out.println("using relative methods");
+		break;
+		
+		default:
+			System.out.println("Inapproritate command");
+	 
+		} 
+		//printing the result on console
+		System.out.println("The route is:");
+		 for(int i=0;i<8;i++){
+			 System.out.println(" City:"+ MapList(i));
+			 
+		 }
+		}
 	}
-}
- 
+	
+	
+	
+	
+	 
+	 
+	 
