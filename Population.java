@@ -1,48 +1,37 @@
 package Problem;
 
+import java.util.ArrayList;
+
 public class Population {
 
-    Map[] exSet;
- 
+	Map[] AllMaps;
+	
+	public Map getMaps(int position) {
+		return AllMaps[position];
+	}
+	
+	public void setMaps() {
+		
+	}
+		
+	public void AllPaths (int i, Map placemap) {
+		AllMaps[i]=placemap; 
+	}
+	
+	public void newPaths( boolean i) {
+		AllMaps = new Map[7];
+		if ( i == true) {
+			for (int j=0; j<8;j++) {
+				Map anotherMap = new Map();
+				anotherMap.initaOrder() ;
+				AllPaths(j,anotherMap);
+				
+				 
+			}
+		}
+	}
+	
+        
     
-    // Create a population
-    public Population(int pSize, boolean init) {
-        exSet = new Map[pSize];
-        // Initialize population
-        if (init) {
-            // Loop and create individuals
-            for (int i = 0; i < 8; i++) {
-            	Map newTour = new Map();
-                NewSet.initaOrder();
-                saveIndividual(i, newIndividual);
-            } 
-        }
-    }
-  
-    /* Getters */
-    public Individual getIndividual(int index) {
-        return individuals[index];
-    }
-
-    public Individual getFittest() {
-        Individual fittest = individuals[0];
-        // Loop through individuals to find fittest
-        for (int i = 0; i < size(); i++) {
-            if (fittest.getFitness() <= getIndividual(i).getFitness()) {
-                fittest = getIndividual(i);
-            }
-        }
-        return fittest;
-    }
-
-    /* Public methods */
-    // Get population size
-    public int size() {
-        return individuals.length;
-    }
-
-    // Save individual
-    public void saveIndividual(int index, Individual indiv) {
-        individuals[index] = indiv;
-    }
 }
+

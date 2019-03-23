@@ -10,12 +10,18 @@ public class Map {
     //public ArrayList Mapp= new ArrayList<City>(20);
 	
 	//for test of 8 cities
-	public ArrayList MapList= new ArrayList<City>(7);
-	int index=0;
-	double fitness=0;
-	double distance=0;
-	int NumCity=0;
+	public ArrayList MapList= new ArrayList<City>();
+	public int index=0;
+	public double fitness=0;
+	public double distance=0;
+	public int NumCity=0;
 	
+	
+	public Map() {
+		for (int i=0;i<8;i++) {
+			MapList.add(null);
+		}
+	} 
 	
 	public Map(ArrayList MapList) {
 		this.MapList=MapList;

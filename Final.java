@@ -22,6 +22,27 @@ public class Final {
 		//creating a test city Matrix but can also accept these values from user
 		
 		//distance relative
+		
+		
+		String cityName[]= {"Brighton", "Briston","Cambridge",
+				            "Glasgow", "Liverpool", "London",
+				            "Manchester", "Oxford"};
+		
+		//absolute test  
+		
+		City aCity = new City(cityName[0],0,0 );
+		City bCity = new City(cityName[1],2,3 );
+		City cCity = new City(cityName[2],4,1 );
+		City dCity = new City(cityName[3],7,8 );
+		City eCity = new City(cityName[4],6,6 );
+		City fCity = new City(cityName[5],5,4 );
+		City gCity = new City(cityName[6],2,1 );
+		City hCity = new City(cityName[7],8,7 );
+	
+		break;
+		
+		case "R":
+		System.out.println("using relative methods");
 		int testCityMatrix[][]={
 				{0,172,145,607,329,72,312,120},
 				{172,0,192,494,209,158,216,93},
@@ -36,21 +57,6 @@ public class Final {
 				            "Glasgow", "Liverpool", "London",
 				            "Manchester", "Oxford"};
 		
-		//use relative distance to get absolute distance
-		
-		//City aCity = new City(cityName[0],0,0 );
-		//City bCity = new City(cityName[1],0,0 );
-		//City cCity = new City(cityName[2],0,0 );
-		//City dCity = new City(cityName[3],0,0 );
-		//City eCity = new City(cityName[4],0,0 );
-		//City fCity = new City(cityName[5],0,0 );
-		//City gCity = new City(cityName[6],0,0 );
-		//City hCity = new City(cityName[7],0,0 );
-	
-		break;
-		
-		case "R":
-		System.out.println("using relative methods");
 		break;
 		
 		default:
